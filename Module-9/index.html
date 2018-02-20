@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <div class="slideThree">  
+        <input type="checkbox" value="None" id="slideThree" name="check" checked />
+        <label for="slideThree"></label>
+        <span>Sound</span>
+    </div>
+    <div id="wrapper"></div>
+    <script type="text/template" id="menu">
+        <div class="keyboard">
+            <% keyboard.row.forEach(row => { %>
+                <% let a = 0 %>
+                <div class=keyboard__row>                    
+                    <% row.forEach (item => { %>
+                        <button class="keyboard__btn" data-note="<%- keyboard.notes[a] %>"><%- item %></button>
+                        <% a++; %>
+                        <% if (a == 7){
+                        a = 0};%>
+                    <% }); %>
+                </div>
+            <% }); %>
+        </div>      
+        <div class="keyboard__row">
+            <button class="keyboard__btn keyboard__btn--space" data-note="do">space</button>
+        </div>
+    </script>
+    <audio class="sonidos" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/742140/C.mp3" data-note="do"></audio>
+    <audio class="sonidos" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/742140/D.mp3" data-note="re"></audio>
+    <audio class="sonidos" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/742140/E.mp3" data-note="mi"></audio> 
+    <audio class="sonidos" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/742140/F.mp3" data-note="fa"></audio>
+    <audio class="sonidos" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/742140/G.mp3" data-note="sol"></audio>
+    <audio class="sonidos" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/742140/A.mp3" data-note="la"></audio>
+    <audio class="sonidos" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/742140/B.mp3" data-note="si"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
