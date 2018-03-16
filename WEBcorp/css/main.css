@@ -1,0 +1,261 @@
+body {
+  background-color: #f2f2f2; }
+
+header {
+  width: 100%;
+  max-width: 1920px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #1a5f74; }
+  header picture {
+    padding-right: 7%;
+    padding-left: 13%;
+    padding-top: 8px; }
+  header .search {
+    min-width: 62%;
+    position: relative;
+    padding-top: 4px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 40px;
+    padding-bottom: 8px; }
+    header .search .location {
+      background-color: #fff;
+      width: 6%;
+      padding-left: 8px; }
+      header .search .location picture:last-child {
+        padding-left: 14px; }
+    header .search input {
+      width: 63%;
+      line-height: 24px;
+      border-left: 0;
+      border: 0;
+      -webkit-border-radius: 0 2px 2px 0;
+              border-radius: 0 2px 2px 0; }
+    header .search img.loop {
+      position: absolute;
+      top: 27%;
+      right: 32%; }
+  header .user {
+    min-width: 3%;
+    padding-right: 2%;
+    margin-bottom: 5px; }
+    header .user picture {
+      padding-right: 18px; }
+    header .user img:nth-child(2) {
+      padding-top: 4px; }
+
+.bg-img {
+  position: absolute; }
+
+.container {
+  padding-top: 16%;
+  margin: 0 18%; }
+  .container .leaf {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    padding-left: 100px; }
+    .container .leaf h2 {
+      font-size: 40px; }
+    .container .leaf p {
+      font-size: 14px; }
+  .container .block-top {
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding: 50px 50px 90px 50px;
+    margin-right: 20px;
+    -webkit-box-shadow: 0 0 3px 1px #b3b3b3;
+            box-shadow: 0 0 3px 1px #b3b3b3; }
+    .container .block-top p {
+      margin-top: 36px; }
+  .container .block-bottom {
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding: 40px 50px;
+    margin-right: 20px;
+    -webkit-box-shadow: 0 0 3px 1px #b3b3b3;
+            box-shadow: 0 0 3px 1px #b3b3b3; }
+  .container .course {
+    font-family: "Roboto", sans-serif;
+    color: #fff; }
+    .container .course h2 {
+      font-size: 40px; }
+    .container .course p {
+      font-size: 14px; }
+  .container .card {
+    margin-top: 50px;
+    -webkit-box-shadow: 0 0 3px 1px #b3b3b3;
+            box-shadow: 0 0 3px 1px #b3b3b3;
+    position: relative;
+    padding-top: 50px; }
+    .container .card .logo {
+      position: absolute;
+      top: -7%;
+      left: 2%; }
+    .container .card .star {
+      position: absolute;
+      top: 3%;
+      right: 6%; }
+    .container .card .room {
+      width: 100%;
+      padding: 0 4%;
+      margin-bottom: 20px; }
+    .container .card .text,
+    .container .card p {
+      padding: 0 8%; }
+      .container .card .text span,
+      .container .card p span {
+        display: inline-block; }
+    .container .card hr {
+      border-bottom: #d1d1d1 1px solid;
+      margin: 3% 8%; }
+    .container .card .country {
+      color: #737373;
+      padding: 10px 22px; }
+  .container .phrase {
+    padding: 20px 30px;
+    margin-bottom: 30px; }
+  .container .slider {
+    position: relative;
+    margin-bottom: 90px; }
+    .container .slider ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    .container .slider p.mobile {
+      display: none; }
+    .container .slider .card {
+      margin: 0 5px; }
+      .container .slider .card span {
+        display: inline-block; }
+    .container .slider .arrow-left,
+    .container .slider .arrow-right {
+      position: absolute;
+      -webkit-border-radius: 6px;
+              border-radius: 6px;
+      padding: 24px;
+      background-color: #fff;
+      -webkit-box-shadow: 0px 2px 4px 1px #b3b3b3;
+              box-shadow: 0px 2px 4px 1px #b3b3b3;
+      top: 44%; }
+    .container .slider .arrow-left {
+      left: -8%; }
+    .container .slider .arrow-right {
+      right: -8%; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  header {
+    width: 100%;
+    min-width: 320px; }
+    header picture {
+      padding: 2% 4%; }
+    header .search {
+      min-width: 50%; }
+      header .search .location {
+        width: 25%; }
+        header .search .location img:last-child {
+          padding-left: 4px; }
+      header .search img.loop {
+        right: 21%; }
+    header .user {
+      padding-right: 2px; }
+      header .user picture {
+        padding-right: 0; }
+  .container {
+    width: 100%;
+    min-width: 320px;
+    margin: 0; }
+    .container .mobile {
+      -webkit-box-ordinal-group: 0;
+      -webkit-order: -1;
+          -ms-flex-order: -1;
+              order: -1; }
+    .container .course {
+      display: none; }
+    .container .card {
+      margin-top: 0; }
+      .container .card hr {
+        margin: 0% 7%; }
+    .container .leaf {
+      margin-top: 80px;
+      padding: 0; }
+      .container .leaf h2 {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 40px; }
+      .container .leaf img {
+        padding: 0 40%;
+        margin-bottom: 20px; }
+      .container .leaf p {
+        display: none; }
+    .container .text h5 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+    .container .block-top,
+    .container .block-bottom {
+      margin-right: 0;
+      padding: 28px 18px 70px 18px; }
+      .container .block-top img,
+      .container .block-bottom img {
+        padding: 0 40%; }
+      .container .block-top h3,
+      .container .block-bottom h3 {
+        font-size: 22px;
+        text-align: center; }
+      .container .block-top p,
+      .container .block-bottom p {
+        font-size: 16px; }
+      .container .block-top img.mobile-card,
+      .container .block-bottom img.mobile-card {
+        display: none; }
+    .container .phrase {
+      margin-bottom: 0; }
+      .container .phrase h3 {
+        font-size: 16px; }
+    .container .slider .star,
+    .container .slider .text,
+    .container .slider p,
+    .container .slider hr,
+    .container .slider .arrow-right,
+    .container .slider .arrow-left {
+      display: none; }
+    .container .slider p.mobile {
+      display: block;
+      font-family: "Roboto", sans-serif;
+      font-size: 13px;
+      font-weight: bold; }
+    .container .slider .country {
+      padding: 0 12px; }
+      .container .slider .country img {
+        vertical-align: baseline;
+        padding-right: 4px; }
+      .container .slider .country h6 {
+        font-size: 12px; }
+    .container .slider .card {
+      padding-top: 0; }
+      .container .slider .card .room {
+        padding: 0; }
+      .container .slider .card .logo {
+        top: 0; } }
