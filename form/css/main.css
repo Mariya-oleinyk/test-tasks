@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #e8e8e8; }
+
+.wrapper {
+  max-width: 840px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-top: 2px solid #e62b1e;
+  position: relative; }
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    .wrapper {
+      max-width: 300px;
+      margin: 0 auto; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+      max-width: 500px; } }
+  .wrapper .caption {
+    text-align: center;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 31px;
+    font-weight: bold;
+    padding: 32px 0; }
+    @media all and (min-width: 320px) and (max-width: 767px) {
+      .wrapper .caption {
+        font-size: 20px; } }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+      .wrapper .caption {
+        font-size: 26px; } }
+  .wrapper .close {
+    position: absolute;
+    top: 2%;
+    right: 2%; }
+  .wrapper .form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #f3f3f3;
+    padding: 40px 34px; }
+    @media all and (min-width: 320px) and (max-width: 767px) {
+      .wrapper .form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 0 14px;
+        line-height: 40px; } }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+      .wrapper .form {
+        padding: 27px 22px; } }
+    .wrapper .form__networks {
+      width: 50%;
+      padding-right: 60px;
+      border-right: 1px solid #cfcfcf; }
+      @media all and (min-width: 320px) and (max-width: 767px) {
+        .wrapper .form__networks {
+          width: 100%;
+          padding-right: 0; } }
+      @media all and (min-width: 768px) and (max-width: 1023px) {
+        .wrapper .form__networks {
+          padding-right: 22px; } }
+      .wrapper .form__networks--facebook {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        background-color: #3e5b96;
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        margin-bottom: 22px; }
+        .wrapper .form__networks--facebook img {
+          padding: 9px 15px; }
+        .wrapper .form__networks--facebook p {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          color: #fff;
+          line-height: 39px;
+          padding: 0 65px; }
+          @media all and (min-width: 320px) and (max-width: 767px) {
+            .wrapper .form__networks--facebook p {
+              padding: 0 34px; } }
+          @media all and (min-width: 768px) and (max-width: 1023px) {
+            .wrapper .form__networks--facebook p {
+              padding: 0 4px; } }
+      .wrapper .form__networks--google {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        background-color: #dd5342;
+        -webkit-border-radius: 2px;
+                border-radius: 2px; }
+        .wrapper .form__networks--google img {
+          padding: 9px 15px; }
+        .wrapper .form__networks--google p {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          color: #fff;
+          line-height: 39px;
+          padding: 0 50px; }
+          @media all and (min-width: 320px) and (max-width: 767px) {
+            .wrapper .form__networks--google p {
+              padding: 0 19px; } }
+          @media all and (min-width: 768px) and (max-width: 1023px) {
+            .wrapper .form__networks--google p {
+              padding: 0 4px; } }
+    .wrapper .form__login {
+      width: 50%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding-left: 60px; }
+      @media all and (min-width: 320px) and (max-width: 767px) {
+        .wrapper .form__login {
+          width: 100%;
+          padding-left: 0px; } }
+      @media all and (min-width: 768px) and (max-width: 1023px) {
+        .wrapper .form__login {
+          padding-left: 22px; } }
+      .wrapper .form__login label {
+        color: #333333;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 28px; }
+      .wrapper .form__login input {
+        line-height: 28px;
+        padding-left: 10px;
+        border: 1px solid #dddddd;
+        -webkit-border-radius: 2%;
+                border-radius: 2%;
+        margin-bottom: 25px; }
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+          .wrapper .form__login input {
+            margin-bottom: 14px; } }
+      .wrapper .form__login--btn {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        position: relative; }
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+          .wrapper .form__login--btn {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column; } }
+        .wrapper .form__login--btn button {
+          color: #fff;
+          font-size: 14px;
+          font-family: Arial, Helvetica, sans-serif;
+          padding: 14px 30px;
+          border: 0;
+          -webkit-border-radius: 4%;
+                  border-radius: 4%;
+          color: #fff;
+          background-color: #252525; }
+          @media all and (min-width: 320px) and (max-width: 767px) {
+            .wrapper .form__login--btn button {
+              padding: 2px 25px; } }
+        .wrapper .form__login--btn a {
+          padding: 14px 30px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 14px;
+          color: #252525;
+          font-weight: bold; }
+          @media all and (min-width: 320px) and (max-width: 767px) {
+            .wrapper .form__login--btn a {
+              padding: 3px 18px; } }
+          @media all and (min-width: 768px) and (max-width: 1023px) {
+            .wrapper .form__login--btn a {
+              padding: 14px 28px; } }
+      .wrapper .form__login .hint {
+        display: none; }
+      .wrapper .form__login:hover > .hint {
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: bold;
+        font-size: 14px;
+        width: 324px;
+        padding: 5px;
+        background-color: #666666;
+        color: #fff;
+        text-align: center;
+        border: 1px solid #e62b1e; }
+        @media all and (min-width: 320px) and (max-width: 767px) {
+          .wrapper .form__login:hover > .hint {
+            line-height: 18px;
+            width: 271px; } }
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+          .wrapper .form__login:hover > .hint {
+            line-height: 16px;
+            width: 205px;
+            font-size: 11px; } }
+  .wrapper .sign {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #666666;
+    padding: 34px 0; }
+    @media all and (min-width: 320px) and (max-width: 767px) {
+      .wrapper .sign {
+        padding: 20px 0;
+        font-size: 15px; } }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+      .wrapper .sign {
+        padding: 20px 0; } }
+    .wrapper .sign a {
+      color: #000000;
+      font-weight: bold;
+      font-size: 18px; }
+      @media all and (min-width: 320px) and (max-width: 767px) {
+        .wrapper .sign a {
+          font-size: 15px; } }
