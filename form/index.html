@@ -28,10 +28,10 @@
                 <input id="login" type="text" name="login" class="validate" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
                 
                 <label for="password">Password</label>
-                <input id="password" type="password" name="password" class="password validate" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
-                <div class="hint">
+                <input id="password" type="password" name="password" class="password validate" title="You need to use at least 1 uppercase, 1 lowercase and 1 number!" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+                <!-- <div class="hint">
                     <p>You need to use at least 1 uppercase, 1 lowercase and 1 number!</p>
-                </div>
+                </div> -->
                 <label for=""><input type="checkbox" name="remember" id="remember">Remember me</label>
                 <div class="form__login--btn">
                     <button id="submit-btn" type="submit">Log in</button>
